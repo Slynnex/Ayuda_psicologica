@@ -31,8 +31,8 @@ public class Registro_usuario extends AppCompatActivity implements View.OnClickL
         String ape = direccion.getText().toString();
         String tel = telefono.getText().toString();
         String con = contra.getText().toString();
-        String est = telefono.getText().toString();
-        String mun = contra.getText().toString();
+        String est = estado.getText().toString();
+        String mun = municipio.getText().toString();
         //String URL = "http://apagafire.herokuapp.com/index.php?nombre="+nombre.getText().toString()+"& apellido="+apellido.getText().toString()+"& email="+email.getText().toString()+"& telefono="+telefono.getText().toString()+"& contra="+contra.getText().toString();
 
 
