@@ -13,8 +13,67 @@
         android:layout_height="614dp"
         android:background="@color/colorFontground">
 
-
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="348dp"
+            android:layout_marginTop="75dp"
+            android:layout_height="wrap_content"
+            tools:srcCompat="@tools:sample/avatars" />
 
     </LinearLayout>
+
+        <TextView
+            android:layout_width="348dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="250dp"
+            android:text="E-mail"
+            android:textSize="30dp"
+            android:textColor="#000"/>
+
+        <EditText
+            android:id="@+id/editUsu"
+            android:layout_width="348dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="300dp"
+            android:ems="10"
+            tools:layout_editor_absoluteX="90dp"
+            tools:layout_editor_absoluteY="303dp" />
+
+        <TextView
+            android:layout_width="348dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="375dp"
+            android:text="Contraseña"
+            android:textSize="30dp"
+            android:textColor="#000"/>
+
+        <EditText
+            android:id="@+id/editContra"
+            android:layout_width="348dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="430dp"
+            android:ems="10"
+            tools:layout_editor_absoluteX="90dp"
+            tools:layout_editor_absoluteY="303dp" />
+
+        <Button
+            android:id="@+id/enter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="520dp"
+            android:text="Entrar"
+            android:layout_marginLeft="50dp"
+            tools:layout_editor_absoluteX="234dp"
+            tools:layout_editor_absoluteY="478dp" />
+
+        <Button
+            android:id="@+id/reg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="520dp"
+            android:text="Registrar"
+            android:layout_marginLeft="200dp"
+            tools:layout_editor_absoluteX="234dp"
+            tools:layout_editor_absoluteY="478dp" />
 
 </RelativeLayout>
