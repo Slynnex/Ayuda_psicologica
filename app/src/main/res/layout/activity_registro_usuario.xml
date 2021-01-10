@@ -94,7 +94,7 @@
             android:textColor="#000"/>
 
         <EditText
-            android:id="@+id/editCon"
+            android:id="@+id/editContra"
             android:layout_width="348dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="330dp"

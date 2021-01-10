@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Ayuda_psicologica</string>
+    <string name="email_login">Correo electrónico</string>
+    <string name="pass_login">Contraseña</string>
 </resources>

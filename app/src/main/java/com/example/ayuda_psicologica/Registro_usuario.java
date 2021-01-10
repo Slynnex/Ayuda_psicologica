@@ -58,7 +58,7 @@ public class Registro_usuario extends AppCompatActivity implements View.OnClickL
                     parametros.put("direccion",direccion.getText().toString());
                     parametros.put("telefono",telefono.getText().toString());
                     parametros.put("contra",contra.getText().toString());
-                    parametros.put("estado",estado.getText().toString());
+                    String estado = parametros.put("estado", Registro_usuario.this.estado.getText().toString());
                     parametros.put("municipio",municipio.getText().toString());
                     return parametros;
                 }
