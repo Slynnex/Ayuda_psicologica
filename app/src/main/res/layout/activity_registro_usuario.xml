@@ -8,15 +8,13 @@
     android:gravity="center"
     tools:context=".MainActivity">
 
+
     <LinearLayout
         android:layout_width="348dp"
         android:layout_height="614dp"
-        android:background="@color/colorFontground">
+        android:background="@color/colorFontground"/>
 
-    </LinearLayout>
-
-
-        <TextView
+    <TextView
             android:id="@+id/textView"
             android:layout_width="348dp"
             android:layout_height="wrap_content"
@@ -93,13 +91,13 @@
             android:textSize="15dp"
             android:textColor="#000"/>
 
-        <EditText
-            android:id="@+id/editContra"
-            android:layout_width="348dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="330dp"
-            android:ems="15"
-            android:inputType="textPersonName" />
+    <EditText
+        android:id="@+id/editContra"
+        android:layout_width="348dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="330dp"
+        android:ems="15"
+        android:inputType="textPersonName" />
 
         <TextView
             android:id="@+id/textView5"
@@ -110,13 +108,18 @@
             android:textSize="15dp"
             android:textColor="#000"/>
 
-        <EditText
-            android:id="@+id/editEsta"
-            android:layout_width="348dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="405dp"
-            android:ems="15"
-            android:inputType="textPersonName" />
+    <Spinner
+        android:id="@+id/editEsta"
+        android:layout_width="348dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="405dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:dropDownWidth="wrap_content"
+        android:paddingBottom="0px"
+        android:paddingLeft="0px"
+        android:paddingRight="0px"
+        android:paddingTop="10px"
+        android:popupBackground="?attr/actionModeBackground" />
 
         <TextView
             android:id="@+id/textView6"
@@ -154,8 +157,6 @@
             android:layout_marginLeft="200dp"
             tools:layout_editor_absoluteX="234dp"
             tools:layout_editor_absoluteY="478dp" />
-
-
 
 
 </RelativeLayout>

@@ -5,8 +5,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 import java.util.HashMap;
@@ -58,7 +60,7 @@ public class Registro_usuario extends AppCompatActivity implements View.OnClickL
                     parametros.put("direccion",direccion.getText().toString());
                     parametros.put("telefono",telefono.getText().toString());
                     parametros.put("contra",contra.getText().toString());
-                    String estado = parametros.put("estado", Registro_usuario.this.estado.getText().toString());
+                    //String estado = parametros.put("estado", Registro_usuario.this.estado.getText().toString());
                     parametros.put("municipio",municipio.getText().toString());
                     return parametros;
                 }
@@ -82,13 +84,18 @@ public class Registro_usuario extends AppCompatActivity implements View.OnClickL
         email = findViewById(R.id.editEmail);
         telefono = findViewById(R.id.editTel);
         contra = findViewById(R.id.editContra);
-        estado = findViewById(R.id.editEsta);
+        //estado = findViewById(R.id.editEsta);
+        Spinner estado = (Spinner) findViewById(R.id.editEsta);
         municipio = findViewById(R.id.editMun);
 
         regresar = findViewById(R.id.regresar);
         registrar = findViewById(R.id.registrar);
         regresar.setOnClickListener(this);
         registrar.setOnClickListener(this);
+        String[] datos = new String[] {"AGUASCALIENTES", "JALISCO", "ZACATECAS", "CHIHUAHUA", "CDMX"};
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
+                android.R.layout.simple_spinner_item, datos);
+        estado.setAdapter(adapter);
 
     }
 
